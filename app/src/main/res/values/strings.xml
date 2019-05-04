@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">SLT</string>
+
+    <string name="email">Username (CEN2121212)</string>
+    <string name="passowrd">Password</string>
+    <string name="login">SIGN IN</string>
+    <string name="forgot">Forgot password?</string>
+    <string name="signUp">SIGN UP</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tab_text_1">BROADBAND</string>
+    <string name="tab_text_2">SLT ACCOUNT</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="info">You can register either with your Broadband Credentials or SLTAccount Number</string>
+    <string name="broadband_username">Broadband Username (CEN2121212)</string>
+    <string name="broadband_password">Broadband Password</string>
+    <string name="email_signup">Email</string>
+    <string name="signup_mobile_broadband">Mobile</string>
+    <string name="portal_app_password">Portal/App Password</string>
+    <string name="confirm_portal_app_password">Confirm Portal/App Password</string>
+
+    <string name="terms_and_condition">
+        I agree to <u>Terms and Condition</u>.
+    </string>
+
+    <string name="slt_account_number">SLT Account Number</string>
+    <string name="nic_number">NIC Number</string>
+    <string name="reset">Reset</string>
+    <string name="title_activity_main2">Create Account</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_usage">Usage</string>
+    <string name="title_add_data">Add Data</string>
+    <string name="title_history">History</string>
+    <string name="title_profile">Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_1gb_250_lkr">Add 1GB - 250 LKR</string>
+    <string name="add_2gb_500_lkr">Add 2GB - 500 LKR</string>
+    <string name="add_5gb_750_lkr">Add 5GB - 750 LKR</string>
+    <string name="beyond_5gb_150_00_lkr_per_gb">Beyond 5GB - 150.00 LKR per GB</string>
+    <string name="taxes">Government taxes and levies will be added to the price above</string>
+    <string name="standard_volume">Standard Volume</string>
+    <string name="show_daily_usage">SHOW DAILY USAGE</string>
+    <string name="total_volume">Total Volume</string>
+    <string name="title_activity_daily_usage">DailyUsage</string>
+    <string name="current_usage">CURRENT</string>
+    <string name="subscriber_id">Subscriber ID :</string>
+    <string name="subscribed_package">Subscribed Package :</string>
+    <string name="change_contact_information">Change Contact Information</string>
+    <string name="change_portal_app_password">Change Portal/App Password</string>
+    <string name="change_broadband_password">Change Broadband Password</string>
+    <string name="enable_detailed_reports">Enable Detailed Reports</string>
+    <string name="add_to_bill">ADD TO BILL</string>
+    <string name="switch_accounts">Switch Accounts</string>
+
+</resources>

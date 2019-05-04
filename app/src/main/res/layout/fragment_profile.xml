@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainScreens.Profile">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow android:id="@+id/subscriber">
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/subscriber_id"
+                android:textColor="@color/white"
+                />
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="aaaaaaaaaa"
+                android:textColor="@color/white"
+                />
+
+        </TableRow>
+
+        <TableRow>
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/subscribed_package"
+            android:textColor="@color/white"
+            />
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="WEB FAMILY PLUS"
+            android:textColor="@color/white"
+            />
+        </TableRow>
+
+        <TableRow>
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Billing Date : "
+            android:textColor="@color/white"
+            />
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="2019 - 11 - 20"
+            android:textColor="@color/white"
+            />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/changeContactInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="changeContact"
+            android:background="@drawable/btnshape_add_data"
+            android:text="@string/change_contact_information"
+            android:textColor="#0277BD"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/changeAppPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btnshape_add_data"
+            android:text="@string/change_portal_app_password"
+            android:textColor="#0277BD"
+            />
+
+        <Button
+            android:id="@+id/changeBroadbandPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btnshape_add_data"
+            android:text="@string/change_broadband_password"
+            android:textColor="#0277BD"
+            />
+
+        <Button
+            android:id="@+id/enableReports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btnshape_add_data"
+            android:text="@string/enable_detailed_reports"
+            android:textColor="#0277BD"
+            />
+
+        <Button
+            android:id="@+id/switchAccounts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btnshape_add_data"
+            android:text="@string/switch_accounts"
+            android:textColor="#0277BD"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/addToBill"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/buttonshape_signup"
+            android:text="@string/add_to_bill"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
