@@ -11,10 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ChangeProfile.ChangeBroadbandPassword"/>
+        <activity android:name=".ChangeProfile.ChangeAppPassword" />
+        <activity android:name=".ChangeProfile.ChangeContactDetails" />
         <activity
             android:name=".Usage.DailyUsage"
             android:label="@string/title_activity_daily_usage"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main" />

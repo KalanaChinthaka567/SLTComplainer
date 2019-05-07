@@ -1,6 +1,5 @@
 package com.example.slt.MainScreens;
 
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -11,8 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.slt.ChangeProfile.ChangeContactDetails;
 import com.example.slt.ChangeProfile.ChangeAppPassword;
-import com.example.slt.ChangeProfile.ChangeContact;
+import com.example.slt.ChangeProfile.ChangeBroadbandPassword;
 import com.example.slt.R;
 
 
@@ -24,7 +24,7 @@ import com.example.slt.R;
  * Use the {@link Profile#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Profile extends Fragment implements View.OnClickListener{
+public class Profile extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -34,8 +34,9 @@ public class Profile extends Fragment implements View.OnClickListener{
     private String mParam1;
     private String mParam2;
 
-    private Button changeContactInfo;
-    private Button changeAppPassword;
+    Button changeContactInfo;
+    Button changeAppPassword;
+    Button changeBroadbandPassword;
 
     private OnFragmentInteractionListener mListener;
 
@@ -74,22 +75,41 @@ public class Profile extends Fragment implements View.OnClickListener{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_profile,
-                container, false);
 
-        //Linking Resources
-        changeContactInfo = (Button) view.findViewById(R.id.changeContactInfo);
+        View view = inflater.inflate(R.layout.fragment_profile, container, false);
+        changeContactInfo = (Button)view.findViewById(R.id.changeContactInfo);
         changeContactInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(getActivity(), ChangeContactDetails.class);
+                startActivity(intent);
             }
         });
+
         changeAppPassword = (Button)view.findViewById(R.id.changeAppPassword);
+        changeAppPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), ChangeAppPassword.class);
+                startActivity(intent);
+            }
+        });
+
+        changeBroadbandPassword = (Button)view.findViewById(R.id.changeBroadbandPassword);
+        changeBroadbandPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), ChangeBroadbandPassword.class);
+                startActivity(intent);
+            }
+        });
 
 
         return view;
     }
+
+
+
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
@@ -99,27 +119,9 @@ public class Profile extends Fragment implements View.OnClickListener{
     }
 
     @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
-        } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
-        }
-    }
-
-    @Override
     public void onDetach() {
         super.onDetach();
         mListener = null;
-    }
-
-
-
-    @Override
-    public void onClick(View v) {
-
     }
 
     /**

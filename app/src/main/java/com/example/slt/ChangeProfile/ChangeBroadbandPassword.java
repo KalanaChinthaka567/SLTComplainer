@@ -17,13 +17,14 @@ import com.example.slt.MainScreens.Profile;
 import com.example.slt.MainScreens.Usage;
 import com.example.slt.R;
 
-public class ChangeAppPassword extends AppCompatActivity implements
+public class ChangeBroadbandPassword extends AppCompatActivity implements
         Usage.OnFragmentInteractionListener,
         AddData.OnFragmentInteractionListener,
         History.OnFragmentInteractionListener,
-        Profile.OnFragmentInteractionListener{
+        Profile.OnFragmentInteractionListener {
+
     ActionBar actionBar;
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener1
+    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener2
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
         @Override
@@ -59,7 +60,7 @@ public class ChangeAppPassword extends AppCompatActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_change_app_password);
+        setContentView(R.layout.activity_change_broadband_password);
 
         actionBar = getSupportActionBar();
         actionBar.setTitle("Usage Summery");
@@ -67,14 +68,14 @@ public class ChangeAppPassword extends AppCompatActivity implements
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation1);
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener1);
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation3);
+        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener2);
     }
 
     private void loadFragment(Fragment fragment) {
         // load fragment
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.frame_container_edit_app_password, fragment);
+        transaction.replace(R.id.frame_container_edit_broadband_password, fragment);
         transaction.addToBackStack(null);
         transaction.commit();
     }

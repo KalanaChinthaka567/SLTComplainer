@@ -54,5 +54,8 @@
     <string name="enable_detailed_reports">Enable Detailed Reports</string>
     <string name="add_to_bill">ADD TO BILL</string>
     <string name="switch_accounts">Switch Accounts</string>
+    <string name="change_email_pn">You may change your email and phone number</string>
+    <string name="change_email">Email</string>
+    <string name="mobile">Mobile</string>
 
 </resources>

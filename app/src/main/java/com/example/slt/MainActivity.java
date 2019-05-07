@@ -13,7 +13,6 @@ import android.view.MenuItem;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.slt.ChangeProfile.ChangeContact;
 import com.example.slt.MainScreens.AddData;
 import com.example.slt.MainScreens.History;
 import com.example.slt.MainScreens.Profile;
