@@ -11,7 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.example.slt.MainScreens.AddData;
+import com.example.slt.MainScreens.AddData; 
 import com.example.slt.MainScreens.History;
 import com.example.slt.MainScreens.Profile;
 import com.example.slt.MainScreens.Usage;
