@@ -13,6 +13,7 @@ import android.widget.Button;
 import com.example.slt.ChangeProfile.ChangeContactDetails;
 import com.example.slt.ChangeProfile.ChangeAppPassword;
 import com.example.slt.ChangeProfile.ChangeBroadbandPassword;
+import com.example.slt.ChangeProfile.SwitchAccounts;
 import com.example.slt.R;
 
 
@@ -37,6 +38,7 @@ public class Profile extends Fragment {
     Button changeContactInfo;
     Button changeAppPassword;
     Button changeBroadbandPassword;
+    Button switchAccounts;
 
     private OnFragmentInteractionListener mListener;
 
@@ -94,6 +96,15 @@ public class Profile extends Fragment {
                 startActivity(intent);
             }
         });
+        switchAccounts = (Button)view.findViewById(R.id.switchAccounts);
+        switchAccounts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), SwitchAccounts.class);
+                startActivity(intent);
+            }
+        });
+
 
         changeBroadbandPassword = (Button)view.findViewById(R.id.changeBroadbandPassword);
         changeBroadbandPassword.setOnClickListener(new View.OnClickListener() {
@@ -103,6 +114,8 @@ public class Profile extends Fragment {
                 startActivity(intent);
             }
         });
+
+
 
 
         return view;

@@ -57,5 +57,8 @@
     <string name="change_email_pn">You may change your email and phone number</string>
     <string name="change_email">Email</string>
     <string name="mobile">Mobile</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
 
 </resources>

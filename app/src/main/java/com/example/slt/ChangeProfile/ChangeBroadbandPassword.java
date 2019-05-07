@@ -63,7 +63,7 @@ public class ChangeBroadbandPassword extends AppCompatActivity implements
         setContentView(R.layout.activity_change_broadband_password);
 
         actionBar = getSupportActionBar();
-        actionBar.setTitle("Usage Summery");
+        actionBar.setTitle("Change Broadband Password");
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -79,6 +79,7 @@ public class ChangeBroadbandPassword extends AppCompatActivity implements
         transaction.addToBackStack(null);
         transaction.commit();
     }
+
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId()) {

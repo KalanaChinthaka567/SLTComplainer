@@ -17,7 +17,7 @@ import com.example.slt.MainScreens.Profile;
 import com.example.slt.MainScreens.Usage;
 import com.example.slt.R;
 
-public class ChangeAppPassword extends AppCompatActivity implements
+public class SwitchAccounts extends AppCompatActivity implements
         Usage.OnFragmentInteractionListener,
         AddData.OnFragmentInteractionListener,
         History.OnFragmentInteractionListener,
@@ -59,10 +59,10 @@ public class ChangeAppPassword extends AppCompatActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_change_app_password);
+        setContentView(R.layout.activity_switch_accounts);
 
         actionBar = getSupportActionBar();
-        actionBar.setTitle("Change Portal/App Password");
+        actionBar.setTitle("Switch Accounts");
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -74,7 +74,7 @@ public class ChangeAppPassword extends AppCompatActivity implements
     private void loadFragment(Fragment fragment) {
         // load fragment
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.frame_container_edit_app_password, fragment);
+        transaction.replace(R.id.frame_container_switch_accounts, fragment);
         transaction.addToBackStack(null);
         transaction.commit();
     }

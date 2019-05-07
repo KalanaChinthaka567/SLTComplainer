@@ -11,9 +11,28 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ChangeProfile.ChangeBroadbandPassword"/>
-        <activity android:name=".ChangeProfile.ChangeAppPassword" />
-        <activity android:name=".ChangeProfile.ChangeContactDetails" />
+        <activity
+            android:name=".ChangeProfile.SwitchAccounts"
+            tools:ignore="InnerclassSeparator">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.slt.Login_Signup.Login" />
+        </activity>
+        <activity android:name=".ChangeProfile.ChangeBroadbandPassword">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.slt.Login_Signup.Login" />
+        </activity>
+        <activity android:name=".ChangeProfile.ChangeAppPassword">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.slt.Login_Signup.Login" />
+        </activity>
+        <activity android:name=".ChangeProfile.ChangeContactDetails">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.slt.Login_Signup.Login" />
+        </activity>
         <activity
             android:name=".Usage.DailyUsage"
             android:label="@string/title_activity_daily_usage"

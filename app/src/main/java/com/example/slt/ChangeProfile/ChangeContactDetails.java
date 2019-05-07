@@ -21,7 +21,7 @@ public class ChangeContactDetails extends AppCompatActivity implements
         Usage.OnFragmentInteractionListener,
         AddData.OnFragmentInteractionListener,
         History.OnFragmentInteractionListener,
-        Profile.OnFragmentInteractionListener{
+        Profile.OnFragmentInteractionListener {
     ActionBar actionBar;
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener1
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -62,7 +62,7 @@ public class ChangeContactDetails extends AppCompatActivity implements
         setContentView(R.layout.activity_change);
 
         actionBar = getSupportActionBar();
-        actionBar.setTitle("Usage Summery");
+        actionBar.setTitle("Change Contact Info");
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -78,6 +78,7 @@ public class ChangeContactDetails extends AppCompatActivity implements
         transaction.addToBackStack(null);
         transaction.commit();
     }
+
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId()) {
