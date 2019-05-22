@@ -33,6 +33,7 @@
     <string name="title_add_data">Add Data</string>
     <string name="title_history">History</string>
     <string name="title_profile">Profile</string>
+    <string name="title_complaints">Complaints</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -60,5 +61,10 @@
     <string name="current_password">Current Password</string>
     <string name="new_password">New Password</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="make_a_complaint">Make a Complaint</string>
+    <string name="nature_of_complaint">Nature Of Complaint</string>
+    <string name="make_complaint">Make Complaint</string>
+    <string name="comments">Comments</string>
+    <string name="add_complaint">Add Complaint</string>
 
 </resources>

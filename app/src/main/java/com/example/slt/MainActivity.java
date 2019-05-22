@@ -14,6 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.slt.MainScreens.AddData;
+import com.example.slt.MainScreens.Complaints;
 import com.example.slt.MainScreens.History;
 import com.example.slt.MainScreens.Profile;
 import com.example.slt.MainScreens.Usage;
@@ -22,7 +23,8 @@ public class MainActivity extends AppCompatActivity implements
         Usage.OnFragmentInteractionListener,
         AddData.OnFragmentInteractionListener,
         History.OnFragmentInteractionListener,
-        Profile.OnFragmentInteractionListener{
+        Profile.OnFragmentInteractionListener,
+        Complaints.OnFragmentInteractionListener {
 
     ActionBar actionBar;
     LinearLayout linearLayout;
@@ -56,6 +58,11 @@ public class MainActivity extends AppCompatActivity implements
                     fragment = new Profile();
                     loadFragment(fragment);
                     actionBar.setTitle("Profile");
+                    return true;
+                case R.id.navigation_complaints:
+                    fragment = new Complaints();
+                    loadFragment(fragment);
+                    actionBar.setTitle("Add Complaints");
                     return true;
             }
             return false;
